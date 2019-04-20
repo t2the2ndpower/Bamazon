@@ -4,10 +4,10 @@ use bamazon_db;
 
 create table products(
 itemId INTEGER(15) NOT NULL AUTO_INCREMENT,
-PRIMARY KEY (id),
+PRIMARY KEY (itemId),
 productName varchar(40),
 deptName varchar(40),
-price INTEGER(2,2),
+price INTEGER(2),
 stockQty INTEGER(4)
 );
 
@@ -15,7 +15,7 @@ use bamazon_db;
 
 create table departments(
 DeptId INTEGER(15) NOT NULL AUTO_INCREMENT,
-PRIMARY KEY (id),
+PRIMARY KEY (DeptId),
 deptName varchar(40),
 overheadCost INTEGER(6)
 );
