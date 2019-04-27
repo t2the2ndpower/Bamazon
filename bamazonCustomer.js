@@ -6,6 +6,15 @@ const inquirer = require("inquirer");
 // save process arguments in a variable
 var args = process.argv[2];
 
+// establish the db connection (and call a function)
+const connection = mysql.createConnection({
+    host: "localhost",
+    port: 8889, //this port needs to match the port of the sql server (don't get this confuses d with express homework)
+    user: "root",
+    password: "root",
+    database: "bamazon_db"
+});
+
 
 // Create a "Prompt" with a series of questions.
 inquirer
@@ -32,9 +41,17 @@ inquirer
     ])
     .then(function (inquirerResponse) {
         // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
+
+
+
         if (inquirerResponse.confirm) {
+
+            var custItem = inquirerResponse.custPurchaseItemID;
+            var custQty =  inquirerResponse.custPurchaseQty;
+
+//put entire DB Connection within Inquirer
+
             console.log("\nYou have selected to purchase " + inquirerResponse.custPurchaseQty + " units of item #" + inquirerResponse.custPurchaseItemID + "!\n");
-            //console.log("Your " + inquirerResponse.pokemon + " is ready for battle!\n");
         }
         else {
             console.log("\nThat's okay, come again when you are more sure.\n");
@@ -44,14 +61,7 @@ inquirer
 
 
 
-// establish the db connection (and call a function)
-const connection = mysql.createConnection({
-    host: "localhost",
-    port: 8889, //this port needs to match the port of the sql server (don't get this confuses d with express homework)
-    user: "root",
-    password: "root",
-    database: "bamazon_db"
-});
+
 
 connection.connect(function (err) {
     if (err) throw err;
@@ -85,9 +95,9 @@ function showProd() {
 
 
 
-    showProd();
-    // productFinder(args);
-    connection.end();
+showProd();
+// productFinder(args);
+connection.end();
 
 
 
