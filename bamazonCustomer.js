@@ -1,4 +1,4 @@
-//lode required packages
+//load required packages
 
 const mysql = require("mysql");
 const inquirer = require("inquirer");
@@ -14,6 +14,8 @@ const connection = mysql.createConnection({
     password: "root",
     database: "bamazon_db"
 });
+
+
 
 
 // Create a "Prompt" with a series of questions.
