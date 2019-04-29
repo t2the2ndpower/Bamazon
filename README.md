@@ -2,8 +2,20 @@
 Best ONLINE CLI Multi Sku Shoping Clone ever!
 
 See it in ACTION
-[video goes here]
+[https://www.screencast.com/t/n3Ric9rqJu]
 
 How it will CHANGE your LIFE!!!
 
-[series of fun screenshots here]
+(disclaimer: life changing experiences require "mysql" and "inquirer" npm packages)
+
+Launch BAMAZON by simply navagating to the appropriate folder and typing...
+
+*node bamazonCustomer.js* 
+
+into your command line!
+
+Once there, select from an outsanding grouping of products and services like no other.
+Simply enter the itemId of your desired product and the quantity.  BAMAZON will quickly and quietly ship your desired items via vaporMail in 24hrs or less!
+
+Shop to your heart's content!
+
