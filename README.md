@@ -4,7 +4,7 @@ Best ONLINE CLI Multi Sku Shoping Clone ever!
 See it in ACTION
 [https://www.screencast.com/t/n3Ric9rqJu]
 
-![Amazing Bamazon Gif!](/bamazon.gif)
+![Amazing Bamazon Gif!](https://github.com/t2the2ndpower/Bamazon/blob/master/bamazon.gif)
 
 ## How it will CHANGE your LIFE!!!
 
