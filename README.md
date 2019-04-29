@@ -19,5 +19,5 @@ into your command line!
 Once there, select from an outsanding grouping of products and services like no other.
 Simply enter the itemId of your desired product and the quantity.  BAMAZON will quickly and quietly ship your desired items via vaporMail in 24hrs or less!
 
-Shop to your heart's content!
+Shop till your heart's content!
 
