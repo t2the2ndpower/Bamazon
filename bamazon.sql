@@ -42,3 +42,5 @@ insert into products (productName, deptName, price, stockQty) values ("product 1
 use bamazon_db;
 
 select * from products;
+
+ALTER TABLE products MODIFY productName varchar(225);
